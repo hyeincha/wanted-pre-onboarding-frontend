@@ -3,6 +3,14 @@
   margin: 20px;
 }
 
+.title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  color: rgb(32, 195, 227);
+  margin: 40px;
+}
+
 .inputbox {
   margin: auto;
   display: flex;
@@ -16,7 +24,7 @@
 }
 
 .inputbox button {
-  background-color: rgba(77, 177, 211, 0.808);
+  background-color: rgba(47, 171, 212, 0.808);
   border-radius: 3px;
   color: white;
   font-size: medium;
@@ -42,7 +50,18 @@
 }
 
 .todo input {
-  margin-right: 7px;
+  margin: 18px 7px 18px 0px;
+  font-size: 15px;
+}
+
+.done {
+  display: flex;
+  text-decoration: line-through;
+}
+
+.done input {
+  margin: 18px 7px 18px 0px;
+  font-size: 15px;
 }
 
 .icon {
