@@ -1,0 +1,51 @@
+.container {
+  min-width: 450px;
+  margin: 20px;
+}
+
+.inputbox {
+  margin: auto;
+  display: flex;
+  text-align: center;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.inputbox input {
+  width: 100%;
+}
+
+.inputbox button {
+  background-color: rgba(77, 177, 211, 0.808);
+  border-radius: 3px;
+  color: white;
+  font-size: medium;
+  font-weight: 900;
+  margin-left: 10px;
+  width: 100px;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.todos {
+  margin: auto;
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
+
+.todo {
+  display: flex;
+}
+
+.todo input {
+  margin-right: 7px;
+}
+
+.icon {
+  display: flex;
+  gap: 15px;
+}

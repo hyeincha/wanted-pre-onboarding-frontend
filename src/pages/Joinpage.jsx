@@ -1,7 +1,7 @@
-import React from "react";
+import Join from "../components/login/Join";
 
 function joinpage() {
-  return <div>joinpage</div>;
+  return <Join />;
 }
 
 export default joinpage;
