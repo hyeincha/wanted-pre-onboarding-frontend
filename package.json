@@ -2,6 +2,7 @@
   "name": "wanted-pre-onboarding-frontend",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "@emotion/styled": "^11.10.4",
     "@mui/icons-material": "^5.10.9",
