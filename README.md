@@ -1,3 +1,13 @@
+## 🛠 사용 기술
+<img src="https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=HTML5&logoColor=white"/>&nbsp;
+<img src="https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=CSS3&logoColor=white"/>&nbsp;
+<img src="https://img.shields.io/badge/Javascript-yellow?style=flat-square&logo=Javascript&logoColor=white"/>&nbsp;
+<img src="https://img.shields.io/badge/React-0099c3?style=flat-square&logo=React&logoColor=white"/>&nbsp;
+<img src="https://img.shields.io/badge/Axios-5A29E4?style=flat-square&logo=Axios&logoColor=white"/>&nbsp;
+
+## ⛓ 배포 링크
+
+
 ## 🔗 프로젝트 실행 방법
 ``` 
 git clone https://github.com/hyeincha/wanted-pre-onboarding-frontend.git
