@@ -8,7 +8,7 @@
 <br>
 
 ## ⛓ 배포 링크
-https://hyeincha.github.io/wanted-pre-onboarding-frontend/
+https://wanted-pre-onboarding-frontend-six.vercel.app/
 
 <br>
 
