@@ -14,6 +14,7 @@ function Join() {
       localStorage.setItem("accesstoken", `Bearer ${res.data.access_token}`);
       alert("가입이 완료되었습니다.");
       navigate("/todo");
+      window.location.reload();
     }
   };
 

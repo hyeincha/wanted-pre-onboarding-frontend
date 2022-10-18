@@ -19,6 +19,7 @@ function Login() {
       localStorage.setItem("accesstoken", `Bearer ${res.data.access_token}`);
       alert("로그인 되었습니다.");
       navigate("/todo");
+      window.location.reload();
     }
   };
 
