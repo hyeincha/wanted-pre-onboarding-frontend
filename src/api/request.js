@@ -2,6 +2,8 @@ import axios from "axios";
 
 const token = localStorage.getItem("accesstoken");
 
+const headers = { headers: { Authorization: token } };
+
 export const instance = axios.create({
   baseURL: `https://pre-onboarding-selection-task.shop`,
   headers: {
@@ -18,41 +20,17 @@ export const signIn = async (body) => {
 };
 
 export const createTodo = async (todo) => {
-  return await instance.post(
-    `/todos`,
-    { todo },
-    {
-      headers: {
-        Authorization: token,
-      },
-    }
-  );
+  return await instance.post(`/todos`, { todo }, headers);
 };
 
 export const getTodo = async () => {
-  return await instance.get(`/todos`, {
-    headers: {
-      Authorization: token,
-    },
-  });
+  return await instance.get(`/todos`, headers);
 };
 
-export const updateTodo = async (id, todo, isDone) => {
-  return await instance.put(
-    `/todos/${id}`,
-    { todo, isCompleted: isDone },
-    {
-      headers: {
-        Authorization: token,
-      },
-    }
-  );
+export const updateTodo = async (id, todo, isCompleted) => {
+  return await instance.put(`/todos/${id}`, { todo, isCompleted }, headers);
 };
 
 export const deleteTodo = async (id) => {
-  return await instance.delete(`/todos/${id}`, {
-    headers: {
-      Authorization: token,
-    },
-  });
+  return await instance.delete(`/todos/${id}`, headers);
 };
