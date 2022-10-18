@@ -5,8 +5,12 @@
 <img src="https://img.shields.io/badge/React-0099c3?style=flat-square&logo=React&logoColor=white"/>&nbsp;
 <img src="https://img.shields.io/badge/Axios-5A29E4?style=flat-square&logo=Axios&logoColor=white"/>&nbsp;
 
-## ⛓ 배포 링크
+<br>
 
+## ⛓ 배포 링크
+https://hyeincha.github.io/wanted-pre-onboarding-frontend/
+
+<br>
 
 ## 🔗 프로젝트 실행 방법
 ``` 
@@ -18,6 +22,8 @@ npm install
 ```
 npm start
 ```
+
+<br>
 
 ## ✅ 구현 기능 체크리스트
 
