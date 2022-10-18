@@ -19,6 +19,13 @@ function Todolist() {
     setTodos([...todos, newTodo]);
   };
 
+  const onEnterPress = async (e) => {
+    if (todo !== "" && e.key === "Enter") {
+      e.preventDefault();
+      await addTodo();
+    }
+  };
+
   const checkTodo = async (id, todo, isDone) => {
     await updateTodo(id, todo, isDone);
     setTodos(
@@ -46,7 +53,7 @@ function Todolist() {
     <div className={styles.container}>
       <div className={styles.title}>SIMPLE TODOLIST</div>
       <div className={styles.inputbox}>
-        <input value={todo} onChange={inputHandler}></input>
+        <input value={todo} onChange={inputHandler} onKeyUp={onEnterPress}></input>
         <button onClick={addTodo}>추가하기</button>
       </div>
       <div>

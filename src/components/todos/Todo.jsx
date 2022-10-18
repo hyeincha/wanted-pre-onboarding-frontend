@@ -9,14 +9,14 @@ import CloseIcon from "@mui/icons-material/Close";
 function Todo({ todo, eraseTodo, editTodo, checkTodo }) {
   const [editMode, setEditMode] = useState();
   const [isDone, setIsDone] = useState(todo.isCompleted);
-  const [text, textHandler] = useInput();
+  const [text, textHandler] = useInput(todo.todo);
 
   const isDoneHandler = (id) => {
     checkTodo(id, todo.todo, !isDone);
   };
 
   const editHandler = (id) => {
-    editTodo(id, text, isDone);
+    if (text !== "") editTodo(id, text, isDone);
     setEditMode(false);
   };
 
@@ -29,7 +29,13 @@ function Todo({ todo, eraseTodo, editTodo, checkTodo }) {
           type="checkbox"
           checked={todo.isCompleted}
         ></input>
-        {editMode && <input onChange={textHandler} defaultValue={todo.todo}></input>}
+        {editMode && (
+          <input
+            className={styles.edit}
+            onChange={textHandler}
+            defaultValue={todo.todo}
+          ></input>
+        )}
         {!editMode && <p>{todo.todo}</p>}
       </div>
       <div className={styles.icon}>
