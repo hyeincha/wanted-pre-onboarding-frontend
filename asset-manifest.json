@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/wanted-pre-onboarding-frontend.git/static/css/main.d92727e7.css",
-    "main.js": "/wanted-pre-onboarding-frontend.git/static/js/main.69d8fb35.js",
+    "main.js": "/wanted-pre-onboarding-frontend.git/static/js/main.a30496ca.js",
     "index.html": "/wanted-pre-onboarding-frontend.git/index.html",
     "main.d92727e7.css.map": "/wanted-pre-onboarding-frontend.git/static/css/main.d92727e7.css.map",
-    "main.69d8fb35.js.map": "/wanted-pre-onboarding-frontend.git/static/js/main.69d8fb35.js.map"
+    "main.a30496ca.js.map": "/wanted-pre-onboarding-frontend.git/static/js/main.a30496ca.js.map"
   },
   "entrypoints": [
     "static/css/main.d92727e7.css",
-    "static/js/main.69d8fb35.js"
+    "static/js/main.a30496ca.js"
   ]
 }
