@@ -1,7 +1,5 @@
 import axios from "axios";
 
-const token = localStorage.getItem("accesstoken");
-
 export const instance = axios.create({
   baseURL: `https://pre-onboarding-selection-task.shop`,
   headers: {
@@ -10,6 +8,7 @@ export const instance = axios.create({
 });
 
 instance.interceptors.request.use(function (config) {
+  const token = localStorage.getItem("accesstoken");
   if (token) config.headers.Authorization = token;
   return config;
 });

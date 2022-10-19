@@ -12,9 +12,8 @@ function Join() {
     const res = await signUp({ email, password });
     if (res.status === 201) {
       localStorage.setItem("accesstoken", `Bearer ${res.data.access_token}`);
-      alert("가입이 완료되었습니다.");
+      alert("회원가입이 완료되었습니다.");
       navigate("/todo");
-      window.location.reload();
     }
   };
 
